@@ -44,7 +44,7 @@ export default class Graph {
 
     // initialising positions of nodes in circular format, the most optimal starting position for this algorithm
     initPositions(i, numNode) {
-        const angle = i * (2 * Math.PI) / numNode;
+        const angle = Math.PI - i * (2 * Math.PI) / numNode;
         const radius = this.radius;
         const x = radius * Math.cos(angle);
         const y = radius * Math.sin(angle);
