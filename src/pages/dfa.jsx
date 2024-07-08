@@ -1,7 +1,10 @@
 import React from "react";
-
-const DFA = () => {
-  return <div>DFA</div>;
+import DFA from "../utils/dfa";
+import { Button } from "@mui/material";
+const DFAPage = () => {
+  return <div>DFA
+    <Button>Hello</Button>
+  </div>;
 };
 
-export default DFA;
+export default DFAPage;
