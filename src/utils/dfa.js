@@ -60,18 +60,18 @@ class DFA{
     getPositions(){
         const edgeMap = new Map();
         const stateMap = new Map();
-        this.transitions.each(({from, to, alphabet}) => {
-            stateMap.set({from}, true);
-            stateMap.set({to}, true);
-            // edgeMap.set([from, to], true);
-            // edgeMap.set([to, from], true);
+        this.transitions.forEach(({from, to, alphabet}) => {
+            stateMap.set({id : from}, true);
+            stateMap.set({id : to}, true);
+            edgeMap.set([from, to], true);
+            edgeMap.set([to, from], true);
         })
 
         var nodes = []
-        for(const [key, value] of edgeMap){
-            nodes.push(key);
+        for(const [key, value] of stateMap){
+            nodes.push(key.id);
         }
-        var numNodes = nodes.length();
+        var numNodes = nodes.length;
         var edges = []
         this.transitions.forEach(({from, to, alphabet}) => {
             if(edgeMap.get([from, to]) || edgeMap.get([to, from]) || from == to){
@@ -83,7 +83,8 @@ class DFA{
                 edgeMap.set([to, from], true);
             }
         })
-
+        
+        console.log({numNodes, nodes, edges})
         const graph = new Graph({numNodes, nodes, edges});
         this.graph = graph
 
