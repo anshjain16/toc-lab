@@ -18,7 +18,7 @@ class FruchtermanReingold {
         this.width = width;
         this.height = height;
         this.area = width * height;
-        this.l = 1;
+        this.l = 2;
         this.maxIters = 10000000; // max iteration for which the algorithm can run
         this.nodeIds = graph.rawNodes.map(node => node.id);
         this.nodes = graph.nodes;
