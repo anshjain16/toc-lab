@@ -15,12 +15,17 @@
     "concurrently": "^8.2.2",
     "cross-env": "^7.0.3",
     "d3": "^7.9.0",
+    "d3-force": "^3.0.0",
+    "graphviz-react": "^1.2.5",
+    "noam": "^0.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-flow": "^1.0.3",
+    "react-flow-renderer": "^10.3.17",
     "react-router-dom": "^6.24.1",
     "react-scripts": "5.0.1",
     "reactflow": "^11.11.3",
+    "viz.js": "^2.1.2",
     "wait-on": "^7.2.0",
     "web-vitals": "^2.1.4"
   },
@@ -64,6 +69,7 @@
     "electron": "^31.0.1",
     "electron-builder": "^24.13.3",
     "electron-is-dev": "^3.0.1",
+    "tailwindcss": "^3.4.7",
     "webpack-node-externals": "^3.0.0"
   }
 }
