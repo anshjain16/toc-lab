@@ -1,0 +1,15 @@
+.Nfa_vis{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  input {
+    margin: 5px;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 5px 10px;
+  }
+  
